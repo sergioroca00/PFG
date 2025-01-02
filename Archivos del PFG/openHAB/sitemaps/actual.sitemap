@@ -1,0 +1,7 @@
+sitemap actual label="Datos en tiempo real"
+{
+    Frame label="Última actualización" {
+        Text item=day_income
+	Text item=day_power
+    }
+}

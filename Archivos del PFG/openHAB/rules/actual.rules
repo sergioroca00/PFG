@@ -1,0 +1,11 @@
+rule "Datos en tiempo real"
+when
+    Time cron "0 */5 * * * ?" // Cada 5 minutos
+then
+    // Ejecutar el script Python
+    val String ip = executeCommandLine(Duration.ofSeconds(5), "hostname", "-I").trim.split(" ").get(0)
+    val String url = "http://" + ip + ":8080/rest/items/"
+    //logInfo("traza", "URL: "+url)
+    //val String resultado = executeCommandLine(Duration.ofSeconds(60), "/usr/bin/python3", "/home/pi/Desktop/proyecto/Actual.py", "--url", url)
+    logInfo("Datos en tiempo real", "Resultado del script: " + resultado)
+end

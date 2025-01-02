@@ -1,0 +1,12 @@
+sitemap ejemplo label="Ejemplo"
+{
+    Frame label="Control de luces" {
+        Switch item=Light_LivingRoom label="Luz del salón"
+        Switch item=Light_Kitchen label="Luz de la cocina"
+    }
+
+    Frame label="Sensores" {
+        Text item=Sensor_Temperature label="Temperatura"
+        Text item=Sensor_Humidity label="Humedad"
+    }
+}

@@ -1,0 +1,8 @@
+rule "Diarios"
+when
+    Time cron "0 45 23 L * ?" // A las 23:45 el último día de cada mes
+then
+    // Ejecutar el script Python
+    val String resultado = executeCommandLine(Duration.ofSeconds(60), "/usr/bin/python3", "/home/pi/Desktop/proyecto/Diarios.py")
+    logInfo("Datos diarios", "Resultado del script: " + resultado)
+end

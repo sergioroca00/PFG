@@ -1,0 +1,16 @@
+sitemap graficos label="Gráficos de Grafana"
+{
+    Frame label="Gráfico Anuales" {
+        Webview url="http://127.0.0.1:3000/d/ce1v0j0vm8i68f/anuales?orgId=1&viewPanel=1" height=12
+    }
+    Frame label="Gráfico Mensuales" {
+        Webview url="http://127.0.0.1:3000/d/de1v15lojaozkd/mensuales?orgId=1&viewPanel=1" height=12
+    }
+
+    Frame label="Gráfico Diarios" {
+        Webview url="http://127.0.0.1:3000/d/fe1v1ddo72by8f/diarios?orgId=1&viewPanel=1" height=12
+    }
+    Frame label="Gráfico Horarios" {
+        Webview url="http://127.0.0.1:3000/d/ce1v1inyg3thcd/horarios?orgId=1&viewPanel=1" height=12
+    }
+}

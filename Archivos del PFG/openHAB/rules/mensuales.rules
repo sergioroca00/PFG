@@ -1,0 +1,8 @@
+rule "Mensuales"
+when
+    Time cron "0 45 23 31 12 ?" // Cada 31 de diciembre
+then
+    // Ejecutar el script Python
+    val String resultado = executeCommandLine(Duration.ofSeconds(60), "/usr/bin/python3", "/home/pi/Desktop/proyecto/Mensuales.py")
+    logInfo("Datos mensuales", "Resultado del script: " + resultado)
+end

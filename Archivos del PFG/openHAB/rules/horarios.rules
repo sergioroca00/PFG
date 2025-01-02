@@ -1,0 +1,8 @@
+rule "Horarios" 
+when
+    Time cron "0 45 23 * * ?" // A las 23:45 cada día
+then
+    // Ejecutar el script Python
+    val String resultado = executeCommandLine(Duration.ofSeconds(60), "/usr/bin/python3", "/home/pi/Desktop/proyecto/Horarios.py")
+    logInfo("Datos horarios", "Resultado del script: " + resultado)
+end
