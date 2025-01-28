@@ -1,4 +1,4 @@
-from fusionsolar import Client, PandasClient
+import Client, PandasClient
 import pandas as pd 
 import json
 import sqlite3
