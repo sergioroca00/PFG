@@ -33,7 +33,7 @@ def horarios():
     # en la que se quiere almacenar dicho dataframe
     res = escribirHorarios(df, measurement)
     # Se imprime el resultado de la escritura de la base de datos para comprobar si ha funcionado correctamente
-    print (res, "de la fecha", date)
+    print ("Datos horarios.",res, "de la fecha", date)
 
 
 
