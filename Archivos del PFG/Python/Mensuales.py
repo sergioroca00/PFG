@@ -27,7 +27,7 @@ def mensuales():
     # en la que se quiere almacenar dicho dataframe
     res = escribir(df, measurement)
     # Se imprime el resultado de la escritura de la base de datos para comprobar si ha funcionado correctamente
-    print (res, "de la fecha", date)
+    print ("Datos mensuales.", res, "de la fecha", date)
 
 
 
