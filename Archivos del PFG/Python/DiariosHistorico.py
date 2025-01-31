@@ -46,7 +46,7 @@ def rellenar_historico_diario():
                     # Si no se ha obtenido ninguna expeción, la ejecución continúa llamando a la función
                     # escribirCompleto() para introducir el df en la tabla 'measurement' de la base de datos
                     # y se imprime el resultado para corroborar que ha funcionado correctamente
-                    print(escribir(df, measurement), "de la fecha", date)
+                    print("Datos diarios.",escribir(df, measurement), "de la fecha", date)
                     # Si la ejecución llega a este punto es porque no se ha producido ninguna excepción, por 
                     # lo que el intento ha sido exitoso y se pone la variable a True, no hace falta repetir la petición
                     intento_exitoso = True
