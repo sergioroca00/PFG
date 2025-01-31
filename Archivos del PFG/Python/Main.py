@@ -1,4 +1,4 @@
-import Client, PandasClient
+from client import Client, PandasClient
 import pandas as pd 
 import json
 import sqlite3
