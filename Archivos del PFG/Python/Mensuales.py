@@ -16,8 +16,8 @@ measurement = 'mensuales'
 
 def mensuales():
     # Se obtiene la fecha actual en formato aaaammdd
-    # date = datetime.now().strftime("%Y%m%d")
-    date = '20230101'
+    date = datetime.now().strftime("%Y%m%d")
+    # date = '20230101'
     # Se invoca a la función obtenerMensuales() de la clase main, como parámetro se pasa la fecha actual
     # Esta función a su vez invocará a otras para lanzar la petición a la API, obtener los 12 datos y devolverlos 
     # en forma de DataFrame de Pandas, que se guarda en la variable df
